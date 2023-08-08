@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66a2a9e1.chunk.css",
+    "main.js": "/static/js/main.c63da385.chunk.js",
+    "main.js.map": "/static/js/main.c63da385.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d060c914.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d060c914.js.map",
+    "static/js/2.0341bd83.chunk.js": "/static/js/2.0341bd83.chunk.js",
+    "static/js/2.0341bd83.chunk.js.map": "/static/js/2.0341bd83.chunk.js.map",
+    "static/js/3.cc50f228.chunk.js": "/static/js/3.cc50f228.chunk.js",
+    "static/js/3.cc50f228.chunk.js.map": "/static/js/3.cc50f228.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.66a2a9e1.chunk.css.map": "/static/css/main.66a2a9e1.chunk.css.map",
+    "static/js/2.0341bd83.chunk.js.LICENSE.txt": "/static/js/2.0341bd83.chunk.js.LICENSE.txt",
+    "static/media/React-icon.4458987c.png": "/static/media/React-icon.4458987c.png",
+    "static/media/music-logo.154b5181.png": "/static/media/music-logo.154b5181.png",
+    "static/media/terrorblade.db6c0722.jpg": "/static/media/terrorblade.db6c0722.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d060c914.js",
+    "static/js/2.0341bd83.chunk.js",
+    "static/css/main.66a2a9e1.chunk.css",
+    "static/js/main.c63da385.chunk.js"
+  ]
+}
