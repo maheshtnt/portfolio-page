@@ -1,0 +1,45 @@
+.introduction-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: calc(10px + 1vmin);
+}
+
+.img-display-wrapper {
+    margin: 20px;
+    height: 100px;
+    width: 150px;
+}
+
+.img-display {
+    height: 100px;
+    width: 150px;
+}
+
+.personal-info-container {
+    margin: 10px 20px 10px 20px;
+}
+
+.personal-info-inner {
+    margin-bottom: 15px;
+}
+
+.personal-info-inner:last-child {
+    margin-bottom: 0px;
+}
+
+.contact-details-display {
+    display: flex;
+}
+
+.contact-details-display div {
+    margin-right: 20px;
+}
+
+.contact-details-display a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
