@@ -27,10 +27,10 @@ function App() {
     }
  
     setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap())
+    setCurrent(api.selectedScrollSnap() + 1)
  
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap())
+      setCurrent(api.selectedScrollSnap() + 1)
     })
   }, [api])
   
@@ -39,10 +39,8 @@ function App() {
       <div className="App content-center h-screen">
         <div className="flex justify-center flex-col">
           <div className="justify-center">
-            <div className="h-[20vh]">
-            </div>
-            <div className="flex flex-col justify-center">
-              <div className="Introduction text-left text-5xl">
+            <div className="flex flex-col justify-center mt-[18vh]">
+              <div className="Introduction text-left text-6xl">
                 Hi,<br/>
                 <div className="mt-[1rem]">
                   I'm Sai Mahesh Vemulapalli
@@ -57,8 +55,8 @@ function App() {
                 </div>
               </div>
               <div className="flex gap-6 mt-[2rem]">
-                <img src={githubIcon} />
-                <img src={linkedinIcon} />
+                <a href="https://github.com/maheshtnt"><img src={githubIcon} /></a>
+                <a href="https://www.linkedin.com/in/sai-mahesh-vemulapalli/"><img src={linkedinIcon} /></a>
               </div>
             </div>
           </div>
@@ -84,23 +82,27 @@ function App() {
               Optimized complex SQL (joins, window functions, subqueries) and streamlined the S3→Lambda data path, reducing migration time by 30%. 
             </div>
           </div>
-          <div className="CarouselDiv text-left mt-[5rem]">
+          <div className="text-left mt-[5rem]">
             <div className="font-bold text-4xl mb-[1rem]">
               Projects
             </div>
-          <Carousel className="items-center px-[3rem]" setApi={setApi}>
-            <CarouselContent className="h-[20rem]">
-              <CarouselItem className="flex h-[20rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-8/10"> <div>1</div> </div></CarouselItem>
-              <CarouselItem className="flex h-[20rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-8/10"><div>2</div></div></CarouselItem>
-              <CarouselItem className="flex h-[20rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-8/10"><div>3</div></div></CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="bg-transparent" />
-            <CarouselNext className="bg-transparent" />
-          </Carousel>
-          {/* <div className="flex gap-3 justify-center">
-              <Button onClick={() => api?.scrollTo(current - 1)}>Left</Button>
-              <Button onClick={() => api?.scrollTo(current + 1)}>Right</Button>
-          </div> */}
+          <div className='CarouselDiv px-[5rem]'>
+            <Carousel className="items-center" setApi={setApi}>
+              <CarouselContent>
+                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10"> <div>1</div> </div></CarouselItem>
+                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10"><div>2</div></div></CarouselItem>
+                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10"><div>3</div></div></CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="bg-transparent" />
+              <CarouselNext className="bg-transparent" />
+            </Carousel>
+              {/* <div className="flex gap-3 justify-center">
+                <Button onClick={() => api?.scrollTo(current - 1)}>Left</Button>
+                <Button onClick={() => api?.scrollTo(current + 1)}>Right</Button>
+            </div> */}
+          </div>
+          
+          
           </div>
         </div>
       </div>
