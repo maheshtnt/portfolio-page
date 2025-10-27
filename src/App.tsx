@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
+import culinaryCompassWhite from '@/assets/culinaryCompassWhite.svg';
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import {
   Carousel,
@@ -76,22 +77,89 @@ function App() {
             Associate Software Engineer — S&P Global (Jul 2022 – Mar 2023)
             </h3>
             <div className="mt-[1rem]">
-              Shipped an in-house investor–fund portal (React, Node, REST) in collaboration with cross-functional teams, reducing user load times by 75%. 
-              Built an S3→OutSystems ETL powered by SQS, cutting data processing time by 3×. 
-              Deployed containerized AWS Lambda to trigger investor-data workflows on database events and notify users via SNS. 
-              Optimized complex SQL (joins, window functions, subqueries) and streamlined the S3→Lambda data path, reducing migration time by 30%. 
+              <ul className="list-disc">
+                <li>Developed an in-house investor–fund portal (React, Node, REST) with cross-functional teams, reducing user load times by 75%.</li>
+
+                <li>Built an automated S3→OutSystems ETL pipeline powered by SQS, cutting data processing time by 3×.</li>
+
+                <li>Deployed containerized AWS Lambda functions to trigger investor-data workflows on database events and notify users via SNS.</li>
+
+                <li>Optimized complex SQL queries (joins, window functions, subqueries) and streamlined the S3→Lambda data path, reducing migration time by 30%.</li>
+              </ul>
             </div>
           </div>
           <div className="text-left mt-[5rem]">
             <div className="font-bold text-4xl mb-[1rem]">
               Projects
             </div>
+          <div className="grid grid-cols-2">
+            <div className="flex h-[40rem] items-center justify-center">
+              <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
+                <div className="absolute h-full w-full flex flex-auto">
+                  {/* <div className="flex text-9xl text-justify items-center">
+                    <div>Culinary<br />Compass</div>
+                  </div> */}
+                    <img src={culinaryCompassWhite} className="h-full"></img>
+                </div> 
+                <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
+                  <div className="text-justify items-center flex flex-col">
+                    An intuitive and effective android application to help users understand the nutritional make up of restaurant menus
+                    <a className="mt-5" href="https://github.com/maheshtnt/CulinaryCompass"><img src={githubIcon} /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex h-[40rem] items-center justify-center">
+              <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
+                <div>
+                  2
+                </div>
+              </div>
+            </div>
+            <div className="flex h-[40rem] items-center justify-center">
+              <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
+                <div>
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           <div className='CarouselDiv px-[5rem]'>
             <Carousel className="items-center" setApi={setApi}>
               <CarouselContent>
-                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10"> <div>1</div> </div></CarouselItem>
-                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10"><div>2</div></div></CarouselItem>
-                <CarouselItem className="flex h-[40rem] items-center justify-center"><div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10"><div>3</div></div></CarouselItem>
+                <CarouselItem className="flex h-[40rem] items-center justify-center">
+                  <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
+                    <div className="absolute h-full w-full flex flex-auto">
+                      <div className="flex text-9xl text-justify items-center">
+                        <div>Culinary<br />Compass</div>
+                      </div>
+                        <img src={culinaryCompassWhite} className="h-full"></img>
+                    </div> 
+                    <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
+                      <div className="text-justify items-center flex flex-col">
+                        An intuitive and effective android application to help users understand the nutritional make up of restaurant menus
+                        <a className="mt-5" href="https://github.com/maheshtnt/CulinaryCompass"><img src={githubIcon} /></a>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="flex h-[40rem] items-center justify-center">
+                  <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
+                    <div>
+                      2
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="flex h-[40rem] items-center justify-center">
+                  <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
+                    <div>
+                      3
+                    </div>
+                  </div>
+                </CarouselItem>
               </CarouselContent>
               <CarouselPrevious className="bg-transparent" />
               <CarouselNext className="bg-transparent" />

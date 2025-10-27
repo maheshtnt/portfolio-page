@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.hoverTop {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.hoverBase:hover  .hoverTop {
+  opacity: 0.93;
+}
