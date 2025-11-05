@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
-import culinaryCompassWhite from '@/assets/culinaryCompassWhite.svg';
+import culinaryCompassNew from '@/assets/CC_1.jpg';
+import RRSNew from '@/assets/RRS_1.jpeg';
+import MUNew from '@/assets/MU_1.jpg';
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import {
   Carousel,
@@ -14,7 +16,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { type CarouselApi } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-
+import ProjectCard from '@/components/projectCard.tsx'
 
 
 function App() {
@@ -93,13 +95,28 @@ function App() {
               Projects
             </div>
           <div className="grid grid-cols-2">
-            <div className="flex h-[40rem] items-center justify-center">
+            {ProjectCard(
+              "Culinary Compass",
+              "An intuitive and effective android application to help users understand the nutritional make up of restaurant menus",
+              culinaryCompassNew,
+              "https://github.com/maheshtnt/CulinaryCompass"
+            )}
+            {ProjectCard(
+              "Rapid Response System for Road Accidents",
+              "A real-time road accident detection system using IoT and MQTT technology to provide immediate assistance to accident victims",
+              RRSNew,
+              "https://github.com/maheshtnt/CulinaryCompass"
+            )}
+            {ProjectCard(
+              "Malicious URL Detector",
+              "A machine learning model trained to classify URLs as malicious or benign based on 16 different features extracted from the URLs, with a frontend web application for user interaction.",
+              MUNew,
+              "https://github.com/maheshtnt/Malicious-URL-Detector"
+            )}
+            {/* <div className="flex h-[40rem] items-center justify-center">
               <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
                 <div className="absolute h-full w-full flex flex-auto">
-                  {/* <div className="flex text-9xl text-justify items-center">
-                    <div>Culinary<br />Compass</div>
-                  </div> */}
-                    <img src={culinaryCompassWhite} className="h-full"></img>
+                    <img src={culinaryCompassNew} className="h-full"></img>
                 </div> 
                 <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
                   <div className="text-justify items-center flex flex-col">
@@ -108,7 +125,7 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="flex h-[40rem] items-center justify-center">
               <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
                 <div>
@@ -136,7 +153,7 @@ function App() {
                       <div className="flex text-9xl text-justify items-center">
                         <div>Culinary<br />Compass</div>
                       </div>
-                        <img src={culinaryCompassWhite} className="h-full"></img>
+                        <img src={culinaryCompassNew} className="h-full"></img>
                     </div> 
                     <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
                       <div className="text-justify items-center flex flex-col">
