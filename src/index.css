@@ -115,6 +115,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-foreground text-secondary text-2xl;
+    @apply bg-foreground text-secondary text-2xl bg-[url(@/assets/bg_noise.png)];
   }
 }

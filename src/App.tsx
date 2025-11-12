@@ -4,7 +4,8 @@ import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
 import culinaryCompassNew from '@/assets/CC_1.jpg';
 import RRSNew from '@/assets/RRS_1.jpeg';
-import MUNew from '@/assets/MU_1.jpg';
+import MUNew from '@/assets/MU_New.png';
+import BGNoise from '@/assets/bg_noise.png'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import {
   Carousel,
@@ -39,7 +40,7 @@ function App() {
   
   return (
     <>
-      <div className="App content-center h-screen">
+      <div className="App content-center h-screen p-[2rem]">
         <div className="flex justify-center flex-col">
           <div className="justify-center">
             <div className="flex flex-col justify-center mt-[18vh]">
@@ -63,14 +64,18 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* About Me Section */}
           <div className="About text-left mt-[5rem]">
             <h2 className="font-bold text-4xl mb-[1rem]">
-              About
+              About Me
             </h2>
             I’m a Software Engineer and M.S. Computer Science graduate from the University of Illinois - Chicago. 
-            I like building end-to-end web products—clean React/Node interfaces backed by solid APIs, data pipelines, and cloud automation on AWS. 
+            I like building end-to-end web products with clean React/Node interfaces backed by solid APIs, data pipelines, and cloud automation on AWS. 
             My focus is performance, reliability, and clear UX, and I’m comfortable working across the stack from SQL modeling to deployment.
           </div>
+
+          {/* Experience Section */}
           <div className="Experience text-left mt-[5rem]">
             <h2 className="font-bold text-4xl mb-[1rem]">
               Experience
@@ -90,6 +95,47 @@ function App() {
               </ul>
             </div>
           </div>
+
+          {/* Technologies Section */}
+          <div className="w-full flex flex-col text-left mt-[5rem]">
+            <div className="text-4xl font-bold">Technologies</div>
+            <div>
+                <div className="text-3xl mt-[1rem]">Programming and Databases</div>
+                <div className="flex flex-row gap-8 mt-[1rem]">
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                </div>
+
+                <div className="text-3xl mt-[1rem]">Web Development</div>
+                <div className="flex flex-row gap-8 mt-[1rem]">
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                </div>
+
+                <div className="text-3xl mt-[1rem]">Linux and Cloud Services</div>
+                <div className="flex flex-row gap-8 mt-[1rem]">
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                </div>
+
+                <div className="text-3xl mt-[1rem]">Artificial Intelligence and Machine Learning</div>
+                <div className="flex flex-row gap-8 mt-[1rem]">
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                  <img src={githubIcon}></img>
+                </div>
+            </div>
+          </div>
+
+
+          {/* Projects Section*/}
           <div className="text-left mt-[5rem]">
             <div className="font-bold text-4xl mb-[1rem]">
               Projects
@@ -187,7 +233,16 @@ function App() {
             </div> */}
           </div>
           
-          
+          <div className="h-[10rem] w-full bg-foreground flex flex-col gap-8 items-center">
+              <div className="text-5xl">Contact Me</div>
+              <div className="flex flex-row gap-5">
+                <img src={githubIcon}></img>
+                <img src={linkedinIcon}></img>
+              </div>
+          </div> 
+
+
+
           </div>
         </div>
       </div>
