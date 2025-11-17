@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
+import pythonIcon from '@/assets/PythonSvg.svg';
+import javaIcon from '@/assets/JavaSvg.svg';
+import CppIcon from '@/assets/CppSvg.svg';
+import sqlIcon from '@/assets/SQLSvg.svg';
+import JSIcon from '@/assets/JSSvg.svg';
+import TSIcon from '@/assets/TSSvg.svg';
+import reactIcon from '@/assets/ReactSvg.svg';
 import culinaryCompassNew from '@/assets/CC_1.jpg';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
@@ -102,34 +109,34 @@ function App() {
             <div>
                 <div className="text-3xl mt-[1rem]">Programming and Databases</div>
                 <div className="flex flex-row gap-8 mt-[1rem]">
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
+                  <div className="skill-hover"><img className="w-[50px]"src={pythonIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={CppIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={javaIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={sqlIcon}></img></div>
                 </div>
 
-                <div className="text-3xl mt-[1rem]">Web Development</div>
+                <div className="text-3xl mt-[1rem]">Full Stack Development</div>
                 <div className="flex flex-row gap-8 mt-[1rem]">
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
+                  <div className="skill-hover"><img className="w-[50px]"src={reactIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={JSIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={TSIcon}></img></div>
+                  <div className="skill-hover"><img className="w-[50px]"src={pythonIcon}></img></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Linux and Cloud Services</div>
                 <div className="flex flex-row gap-8 mt-[1rem]">
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Artificial Intelligence and Machine Learning</div>
                 <div className="flex flex-row gap-8 mt-[1rem]">
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
-                  <img src={githubIcon}></img>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                  <div className="skill-hover"><img src={githubIcon}></img></div>
                 </div>
             </div>
           </div>
@@ -175,14 +182,7 @@ function App() {
             <div className="flex h-[40rem] items-center justify-center">
               <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
                 <div>
-                  2
-                </div>
-              </div>
-            </div>
-            <div className="flex h-[40rem] items-center justify-center">
-              <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
-                <div>
-                  3
+                  4
                 </div>
               </div>
             </div>
@@ -233,7 +233,7 @@ function App() {
             </div> */}
           </div>
           
-          <div className="h-[10rem] w-full bg-foreground flex flex-col gap-8 items-center">
+          <div className="h-[10rem] w-full flex flex-col gap-8 items-center">
               <div className="text-5xl">Contact Me</div>
               <div className="flex flex-row gap-5">
                 <img src={githubIcon}></img>

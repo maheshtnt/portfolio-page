@@ -41,6 +41,13 @@
   color: #888;
 }
 
+.skill-hover {
+  transition: 0.5s;
+}
+.skill-hover:hover  {
+  scale: 1.3;
+}
+
 .hoverTop {
   opacity: 0;
   transition: 0.3s;
