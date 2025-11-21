@@ -166,6 +166,12 @@ function App() {
               MUNew,
               "https://github.com/maheshtnt/Malicious-URL-Detector"
             )}
+            {ProjectCard(
+              "SoundFlow",
+              "A web application that allows users to share and experience music tracks, ",
+              MUNew,
+              "https://github.com/maheshtnt/soundflow"
+            )}
             {/* <div className="flex h-[40rem] items-center justify-center">
               <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
                 <div className="absolute h-full w-full flex flex-auto">
@@ -179,13 +185,6 @@ function App() {
                 </div>
               </div>
             </div> */}
-            <div className="flex h-[40rem] items-center justify-center">
-              <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
-                <div>
-                  4
-                </div>
-              </div>
-            </div>
           </div>
 
 
@@ -240,7 +239,6 @@ function App() {
                 <img src={linkedinIcon}></img>
               </div>
           </div> 
-
 
 
           </div>
