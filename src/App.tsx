@@ -9,6 +9,15 @@ import sqlIcon from '@/assets/SQLSvg.svg';
 import JSIcon from '@/assets/JSSvg.svg';
 import TSIcon from '@/assets/TSSvg.svg';
 import reactIcon from '@/assets/ReactSvg.svg';
+import tailwindIcon from '@/assets/TailwindSvg.svg';
+import tensorflowIcon from '@/assets/TensorflowSvg.svg';
+import pytorchIcon from '@/assets/PyTorchSvg.svg';
+import kerasIcon from '@/assets/KerasSvg.svg';
+import numpyIcon from '@/assets/NumpySvg.svg';
+import linuxIcon from '@/assets/LinuxSvg.svg';
+import dockerIcon from '@/assets/DockerSvg.svg';
+import kubernetesIcon from '@/assets/KubernetesSvg.svg';
+import awsIcon from '@/assets/AWSSvg.svg';
 import culinaryCompassNew from '@/assets/CC_1.jpg';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
@@ -108,36 +117,37 @@ function App() {
             <div className="text-4xl font-bold">Technologies</div>
             <div>
                 <div className="text-3xl mt-[1rem]">Programming and Databases</div>
-                <div className="flex flex-row gap-8 mt-[1rem]">
-                  <div className="skill-hover"><img className="w-[50px]"src={pythonIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={CppIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={javaIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={sqlIcon}></img></div>
+                <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={pythonIcon}></img></div><div>Python</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={CppIcon}></img></div><div>C++</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={javaIcon}></img></div><div>Java</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={sqlIcon}></img></div><div>SQL</div></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Full Stack Development</div>
-                <div className="flex flex-row gap-8 mt-[1rem]">
-                  <div className="skill-hover"><img className="w-[50px]"src={reactIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={JSIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={TSIcon}></img></div>
-                  <div className="skill-hover"><img className="w-[50px]"src={pythonIcon}></img></div>
+                <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={reactIcon}></img></div><div>React</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={JSIcon}></img></div><div>JavaScript</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={TSIcon}></img></div><div>TypeScript</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={tailwindIcon}></img></div><div>TailWind</div></div>
+                </div>
+                
+                <div className="text-3xl mt-[1rem]">Artificial Intelligence and Machine Learning</div>
+                <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={tensorflowIcon}></img></div><div>TensorFlow</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={pytorchIcon}></img></div><div>PyTorch</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={kerasIcon}></img></div><div>Keras</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={numpyIcon}></img></div><div>NumPy</div></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Linux and Cloud Services</div>
-                <div className="flex flex-row gap-8 mt-[1rem]">
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
+                <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={linuxIcon}></img></div><div>Linux</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={dockerIcon}></img></div><div>Docker</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={kubernetesIcon}></img></div><div>Kubernetes</div></div>
+                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={awsIcon}></img></div><div>AWS</div></div>
                 </div>
 
-                <div className="text-3xl mt-[1rem]">Artificial Intelligence and Machine Learning</div>
-                <div className="flex flex-row gap-8 mt-[1rem]">
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                  <div className="skill-hover"><img src={githubIcon}></img></div>
-                </div>
             </div>
           </div>
 
