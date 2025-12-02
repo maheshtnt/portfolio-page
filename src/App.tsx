@@ -118,34 +118,34 @@ function App() {
             <div>
                 <div className="text-3xl mt-[1rem]">Programming and Databases</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={pythonIcon}></img></div><div>Python</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={CppIcon}></img></div><div>C++</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={javaIcon}></img></div><div>Java</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={sqlIcon}></img></div><div>SQL</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={pythonIcon}></img></div><div>Python</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={CppIcon}></img></div><div>C++</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={javaIcon}></img></div><div>Java</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={sqlIcon}></img></div><div>SQL</div></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Full Stack Development</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={reactIcon}></img></div><div>React</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={JSIcon}></img></div><div>JavaScript</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={TSIcon}></img></div><div>TypeScript</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]"src={tailwindIcon}></img></div><div>TailWind</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={reactIcon}></img></div><div>React</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={JSIcon}></img></div><div>JavaScript</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={TSIcon}></img></div><div>TypeScript</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={tailwindIcon}></img></div><div>TailWind</div></div>
                 </div>
                 
                 <div className="text-3xl mt-[1rem]">Artificial Intelligence and Machine Learning</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={tensorflowIcon}></img></div><div>TensorFlow</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={pytorchIcon}></img></div><div>PyTorch</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={kerasIcon}></img></div><div>Keras</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img className="w-[50px]" src={numpyIcon}></img></div><div>NumPy</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={tensorflowIcon}></img></div><div>TensorFlow</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={pytorchIcon}></img></div><div>PyTorch</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={kerasIcon}></img></div><div>Keras</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={numpyIcon}></img></div><div>NumPy</div></div>
                 </div>
 
                 <div className="text-3xl mt-[1rem]">Linux and Cloud Services</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={linuxIcon}></img></div><div>Linux</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={dockerIcon}></img></div><div>Docker</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={kubernetesIcon}></img></div><div>Kubernetes</div></div>
-                  <div className="skill-hover flex flex-col align-middle"><div className="flex justify-center"><img src={awsIcon}></img></div><div>AWS</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={linuxIcon}></img></div><div>Linux</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={dockerIcon}></img></div><div>Docker</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={kubernetesIcon}></img></div><div>Kubernetes</div></div>
+                  <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={awsIcon}></img></div><div>AWS</div></div>
                 </div>
 
             </div>
