@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
 import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
@@ -22,6 +22,7 @@ import culinaryCompassNew from '@/assets/CC_1.jpg';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
 import BGNoise from '@/assets/bg_noise.png'
+import downArrow from '@/assets/downArrowSVG.svg'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import {
   Carousel,
@@ -34,6 +35,7 @@ import { Button } from "@/components/ui/button"
 import { type CarouselApi } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import ProjectCard from '@/components/projectCard.tsx'
+import ProjectCardRevamped from '@/components/projectCardRevamped.tsx'
 
 
 function App() {
@@ -54,18 +56,21 @@ function App() {
     })
   }, [api])
   
+  const aboutRef = useRef(document.createElement("div"));
+  const scrollToAbout = () => aboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" })
+
   return (
     <>
-      <div className="App content-center h-screen p-[2rem]">
+      <div className="App content-center h-screen p-[2rem] font-montserrat">
         <div className="flex justify-center flex-col">
-          <div className="justify-center">
-            <div className="flex flex-col justify-center mt-[18vh]">
+          <div className="flex justify-center h-screen">
+            <div className="flex flex-col justify-center">
               <div className="Introduction text-left text-6xl">
                 Hi,<br/>
                 <div className="mt-[1rem]">
                   I'm Sai Mahesh Vemulapalli
                 </div>
-                <div className="mt-[1rem]">
+                <div className="mt-[1rem] Rotator">
                 <RotatingText 
                   className="py-2"
                   text={["Developer", "Designer", "Engineer"]}
@@ -78,11 +83,15 @@ function App() {
                 <a href="https://github.com/maheshtnt"><img src={githubIcon} /></a>
                 <a href="https://www.linkedin.com/in/sai-mahesh-vemulapalli/"><img src={linkedinIcon} /></a>
               </div>
+              <div onClick={scrollToAbout} className="know-more flex flex-col justify-center items-center mt-[6vh]">
+                <h2>Know More</h2>
+                <img className="w-[20px]"src={downArrow}></img>
+              </div>
             </div>
           </div>
 
           {/* About Me Section */}
-          <div className="About text-left mt-[5rem]">
+          <div ref={aboutRef} className="About text-left mt-[5rem]">
             <h2 className="font-bold text-4xl mb-[1rem]">
               About Me
             </h2>
@@ -157,18 +166,20 @@ function App() {
             <div className="font-bold text-4xl mb-[1rem]">
               Projects
             </div>
-          <div className="grid grid-cols-2">
-            {ProjectCard(
+          <div className="grid gap-30 grid-cols-1 md:grid-cols-1 ">
+            {ProjectCardRevamped(
               "Culinary Compass",
               "An intuitive and effective android application to help users understand the nutritional make up of restaurant menus",
               culinaryCompassNew,
-              "https://github.com/maheshtnt/CulinaryCompass"
+              "https://github.com/maheshtnt/CulinaryCompass",
+              true
             )}
-            {ProjectCard(
+            {ProjectCardRevamped(
               "Rapid Response System for Road Accidents",
               "A real-time road accident detection system using IoT and MQTT technology to provide immediate assistance to accident victims",
               RRSNew,
-              "https://github.com/maheshtnt/CulinaryCompass"
+              "https://github.com/maheshtnt/CulinaryCompass",
+              false
             )}
             {ProjectCard(
               "Malicious URL Detector",

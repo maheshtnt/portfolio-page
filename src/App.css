@@ -33,6 +33,35 @@
   }
 }
 
+@keyframes arrow-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.know-more {
+  transition: 0.5s;
+}
+
+.know-more img {
+  animation-name: arrow-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.know-more:hover {
+  scale:1.1;
+}
+
+.know-more:hover img {
+  animation-play-state: paused;
+}
+
 .card {
   padding: 2em;
 }
@@ -55,4 +84,8 @@
 
 .hoverBase:hover  .hoverTop {
   opacity: 0.93;
+}
+
+.Rotator {
+  color: #ff7b00;
 }

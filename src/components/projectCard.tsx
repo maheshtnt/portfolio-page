@@ -4,7 +4,7 @@ import githubIcon from '@/assets/githubIconWhite.svg';
 
 function ProjectCard(title: string, desc: string, image: string, githubLink = "") {
     return (
-        <div className="flex h-[40rem] items-center justify-center">
+        <div className="flex h-[40rem] items-center justify-center w-[600px]">
               <div className="hoverBase relative bg-popover-foreground text-background flex items-center justify-center flex-col rounded-xl shadow-black shadow-xl size-9/10">
                 <div className="h-8/10 w-full flex flex-auto">
                     <img src={image} className="h-full w-full"></img>
