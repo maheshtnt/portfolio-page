@@ -117,10 +117,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-foreground text-secondary text-2xl bg-[url(@/assets/bg_noise.png)];
+    @apply bg-foreground text-secondary text-lg;
+    /* bg-[url(@/assets/bg_noise.png)] */
   }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #0e141b
 }
