@@ -22,7 +22,7 @@ import culinaryCompassOld from '@/assets/CC_1.jpg';
 import culinaryCompassNew from '@/assets/CC_New_2.png';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
-import BGNoise from '@/assets/bg_noise.png'
+import BGNoise from '@/assets/bgnoise.png'
 import downArrow from '@/assets/downArrowSVG.svg'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import {
@@ -74,7 +74,7 @@ function App() {
                 <div className="mt-[1rem] Rotator">
                 <RotatingText 
                   className="py-2"
-                  text={["Developer", "Designer", "Engineer"]}
+                  text={["Developer", "Engineer", "Innovator"]}
                   duration={2000}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 />          
@@ -92,7 +92,7 @@ function App() {
           </div>
 
           {/* About Me Section */}
-          <div ref={aboutRef} className="About text-left mt-[5rem]">
+          <div ref={aboutRef} className="About text-left mt-[10rem]">
             <h2 className="font-bold text-4xl mb-[1rem]">
               About Me
             </h2>
@@ -102,7 +102,7 @@ function App() {
           </div>
 
           {/* Experience Section */}
-          <div className="Experience text-left mt-[5rem]">
+          <div className="Experience text-left mt-[10rem]">
             <h2 className="font-bold text-4xl mb-[1rem]">
               Experience
             </h2>
@@ -147,10 +147,10 @@ function App() {
           </div>
 
           {/* Technologies Section */}
-          <div className="w-full flex flex-col text-left mt-[5rem]">
+          <div className="w-full flex flex-col text-left mt-[10rem]">
             <div className="text-4xl font-bold">Technologies</div>
             <div>
-                <div className="text-3xl mt-[1rem]">Programming and Databases</div>
+                <div className="text-2xl mt-[1rem] font-bold text-amber-600">Programming and Databases</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={pythonIcon}></img></div><div>Python</div></div>
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={CppIcon}></img></div><div>C++</div></div>
@@ -158,7 +158,7 @@ function App() {
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={sqlIcon}></img></div><div>SQL</div></div>
                 </div>
 
-                <div className="text-3xl mt-[1rem]">Full Stack Development</div>
+                <div className="text-2xl mt-[1rem] font-bold text-amber-600">Full Stack Development</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={reactIcon}></img></div><div>React</div></div>
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={JSIcon}></img></div><div>JavaScript</div></div>
@@ -166,7 +166,7 @@ function App() {
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]"src={tailwindIcon}></img></div><div>TailWind</div></div>
                 </div>
                 
-                <div className="text-3xl mt-[1rem]">Artificial Intelligence and ML</div>
+                <div className="text-2xl mt-[1rem] font-bold text-amber-600">Artificial Intelligence and ML</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={tensorflowIcon}></img></div><div>TensorFlow</div></div>
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={pytorchIcon}></img></div><div>PyTorch</div></div>
@@ -174,7 +174,7 @@ function App() {
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img className="w-[50px]" src={numpyIcon}></img></div><div>NumPy</div></div>
                 </div>
 
-                <div className="text-3xl mt-[1rem]">Linux and Cloud Services</div>
+                <div className="text-2xl mt-[1rem] font-bold text-amber-600">Linux and Cloud Services</div>
                 <div className="flex flex-row gap-8 mt-[1rem] text-base text-center">
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={linuxIcon}></img></div><div>Linux</div></div>
                   <div className="skill-hover flex flex-col align-middle w-[80px]"><div className="flex justify-center"><img src={dockerIcon}></img></div><div>Docker</div></div>
@@ -187,8 +187,8 @@ function App() {
 
 
           {/* Projects Section*/}
-          <div className="text-left mt-[5rem]">
-            <div className="font-bold text-4xl mb-[1rem]">
+          <div className="text-left mt-[10rem]">
+            <div className="font-bold text-4xl mb-[2rem]">
               Projects
             </div>
           <div className="grid gap-30 grid-cols-1 md:grid-cols-1 ">
@@ -197,6 +197,7 @@ function App() {
               "An intuitive and effective android application to help users understand the nutritional make up of restaurant menus",
               culinaryCompassNew,
               "https://github.com/maheshtnt/CulinaryCompass",
+              githubIcon,
               true
             )}
             {ProjectCardRevamped(
@@ -204,6 +205,7 @@ function App() {
               "A real-time road accident detection system using IoT and MQTT technology to provide immediate assistance to accident victims",
               RRSNew,
               "https://github.com/maheshtnt/CulinaryCompass",
+              githubIcon,
               false
             )}
             {ProjectCard(
@@ -230,51 +232,6 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div> */}
-          </div>
-
-
-
-          <div className='CarouselDiv px-[5rem]'>
-            <Carousel className="items-center" setApi={setApi}>
-              <CarouselContent>
-                <CarouselItem className="flex h-[40rem] items-center justify-center">
-                  <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
-                    <div className="absolute h-full w-full flex flex-auto">
-                      <div className="flex text-9xl text-justify items-center">
-                        <div>Culinary<br />Compass</div>
-                      </div>
-                        <img src={culinaryCompassNew} className="h-full"></img>
-                    </div> 
-                    <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
-                      <div className="text-justify items-center flex flex-col">
-                        An intuitive and effective android application to help users understand the nutritional make up of restaurant menus
-                        <a className="mt-5" href="https://github.com/maheshtnt/CulinaryCompass"><img src={githubIcon} /></a>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="flex h-[40rem] items-center justify-center">
-                  <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
-                    <div>
-                      2
-                    </div>
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="flex h-[40rem] items-center justify-center">
-                  <div className="bg-background text-foreground flex items-center justify-center rounded-xl size-9/10">
-                    <div>
-                      3
-                    </div>
-                  </div>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="bg-transparent" />
-              <CarouselNext className="bg-transparent" />
-            </Carousel>
-              {/* <div className="flex gap-3 justify-center">
-                <Button onClick={() => api?.scrollTo(current - 1)}>Left</Button>
-                <Button onClick={() => api?.scrollTo(current + 1)}>Right</Button>
             </div> */}
           </div>
           

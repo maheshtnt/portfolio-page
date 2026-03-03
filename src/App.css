@@ -92,3 +92,34 @@
 .Rotator {
   color: #ff7b00;
 }
+
+.project-card {
+  position: relative;
+  box-shadow: 0px 0px 12px 4px #2e425980;
+  background-color: #0e141b;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0px 0px 12px 4px #e17100;
+  scale: 1.02;
+}
+
+.project-card::before {
+  background-image: url('./assets/bgnoise.png');
+  background-size: 128px;
+  content: "";
+  position: fixed;
+  inset: 0;
+  opacity: 0.05;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.project-card:hover ::before {
+  scale:1.02;
+}
+
+.project-card-top {
+  top: calc(80px + sibling-index() * 40px);
+}
