@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
 import './App.css';
 import githubIcon from '@/assets/githubIconWhite.svg';
 import linkedinIcon from '@/assets/linkedinIconWhite.svg';
@@ -23,28 +23,11 @@ import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
 import downArrow from '@/assets/downArrowSVG.svg'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
-import { type CarouselApi } from "@/components/ui/carousel"
 import ProjectCardRevamped from '@/components/projectCardRevamped.tsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [api, setApi] = useState<CarouselApi>()
-  const [current, setCurrent] = useState(0)
 
-  useEffect(() => {
-    if (!api) {
-      return
-    }
- 
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap() + 1)
- 
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1)
-    })
-  }, [api])
-  
   const aboutRef = useRef(document.createElement("div"));
   const scrollToAbout = () => aboutRef.current.scrollIntoView({ behavior: "smooth" })
 
