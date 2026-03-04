@@ -11,7 +11,7 @@ import TSIcon from '@/assets/TSSvg.svg';
 import reactIcon from '@/assets/ReactSvg.svg';
 import tailwindIcon from '@/assets/TailwindSvg.svg';
 import tensorflowIcon from '@/assets/TensorflowSvg.svg';
-import pytorchIcon from '@/assets/PyTorchSvg.svg';
+import pytorchIcon from '@/assets/PytorchSvg.svg';
 import kerasIcon from '@/assets/KerasSvg.svg';
 import numpyIcon from '@/assets/NumpySvg.svg';
 import linuxIcon from '@/assets/LinuxSvg.svg';
