@@ -8,6 +8,7 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), cloudflare()],
+  base: "/portfolio-page/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
