@@ -1,4 +1,3 @@
-import React from "react";
 import githubIcon from '@/assets/githubIconWhite.svg';
 
 

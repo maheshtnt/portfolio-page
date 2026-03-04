@@ -18,24 +18,12 @@ import linuxIcon from '@/assets/LinuxSvg.svg';
 import dockerIcon from '@/assets/DockerSvg.svg';
 import kubernetesIcon from '@/assets/KubernetesSvg.svg';
 import awsIcon from '@/assets/AWSSvg.svg';
-import culinaryCompassOld from '@/assets/CC_1.jpg';
 import culinaryCompassNew from '@/assets/CC_New_2.png';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
-import BGNoise from '@/assets/bgnoise.png'
 import downArrow from '@/assets/downArrowSVG.svg'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Button } from "@/components/ui/button"
 import { type CarouselApi } from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
-import ProjectCard from '@/components/projectCard.tsx'
 import ProjectCardRevamped from '@/components/projectCardRevamped.tsx'
 
 
@@ -204,42 +192,35 @@ function App() {
               "Rapid Response System for Road Accidents",
               "A real-time road accident detection system using IoT and MQTT technology to provide immediate assistance to accident victims",
               RRSNew,
-              "https://github.com/maheshtnt/CulinaryCompass",
+              "",
               githubIcon,
               false
             )}
-            {ProjectCard(
+            {ProjectCardRevamped(
               "Malicious URL Detector",
               "A machine learning model trained to classify URLs as malicious or benign based on 16 different features extracted from the URLs, with a frontend web application for user interaction.",
               MUNew,
-              "https://github.com/maheshtnt/Malicious-URL-Detector"
+              "https://github.com/maheshtnt/Malicious-URL-Detector",
+              githubIcon,
+              true
             )}
-            {ProjectCard(
+            {/* {ProjectCard(
               "SoundFlow",
               "A web application that allows users to share and experience music tracks, ",
               MUNew,
               "https://github.com/maheshtnt/soundflow"
-            )}
-            {/* <div className="flex h-[40rem] items-center justify-center">
-              <div className="hoverBase relative bg-foreground text-background flex items-center justify-center flex-col gap-6 rounded-xl shadow-sm size-9/10">
-                <div className="absolute h-full w-full flex flex-auto">
-                    <img src={culinaryCompassNew} className="h-full"></img>
-                </div> 
-                <div className="hoverTop absolute w-full h-full bg-foreground rounded-xl text-4xl text-justify items-center flex">
-                  <div className="text-justify items-center flex flex-col">
-                    An intuitive and effective android application to help users understand the nutritional make up of restaurant menus
-                    <a className="mt-5" href="https://github.com/maheshtnt/CulinaryCompass"><img src={githubIcon} /></a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            )} */}
           </div>
           
-          <div className="h-[10rem] w-full flex flex-col gap-8 items-center">
+          <div className="mt-[35vh] h-[10rem] w-full flex flex-col gap-8 items-center">
               <div className="text-5xl">Contact Me</div>
               <div className="flex flex-row gap-5">
-                <img src={githubIcon}></img>
-                <img src={linkedinIcon}></img>
+                <a href="https://github.com/maheshtnt">
+                  <img src={githubIcon}></img>
+                </a>
+                <a href="https://www.linkedin.com/in/sai-mahesh-vemulapalli/">
+                  <img src={linkedinIcon}></img>
+                </a>
               </div>
           </div> 
 

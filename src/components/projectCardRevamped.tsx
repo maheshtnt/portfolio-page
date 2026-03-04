@@ -1,5 +1,3 @@
-import React from "react";
-import BGNoise from '@/assets/bgnoise.png';
 import githubIcon from '@/assets/githubIconWhite.svg';
 
 

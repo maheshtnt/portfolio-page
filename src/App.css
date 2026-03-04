@@ -121,5 +121,5 @@
 }
 
 .project-card-top {
-  top: calc(80px + sibling-index() * 40px);
+  top: calc(40px + sibling-index() * 40px);
 }
