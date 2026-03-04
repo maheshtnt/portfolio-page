@@ -5,7 +5,7 @@ import linkedinIcon from '@/assets/linkedinIconWhite.svg';
 import pythonIcon from '@/assets/PythonSvg.svg';
 import javaIcon from '@/assets/JavaSvg.svg';
 import CppIcon from '@/assets/CppSvg.svg';
-import sqlIcon from '@/assets/SQLSvg.svg';
+import sqlIcon from '@/assets/SqlSvg.svg';
 import JSIcon from '@/assets/JSSvg.svg';
 import TSIcon from '@/assets/TSSvg.svg';
 import reactIcon from '@/assets/ReactSvg.svg';
