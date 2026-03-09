@@ -21,6 +21,7 @@ import awsIcon from '@/assets/AWSSvg.svg';
 import culinaryCompassNew from '@/assets/CC_New_2.png';
 import RRSNew from '@/assets/RRS_1.jpeg';
 import MUNew from '@/assets/MU_New.png';
+import prodActivity from '@/assets/prodActivity.png';
 import downArrow from '@/assets/downArrowSVG.svg'
 import { RotatingText } from "@/components/ui/shadcn-io/rotating-text";
 import ProjectCardRevamped from '@/components/projectCardRevamped.tsx'
@@ -187,6 +188,14 @@ function App() {
               githubIcon,
               true
             )}
+            {ProjectCardRevamped(
+              "ProdActivity",
+              "A productivity tracking application custom built for developers to optimize their schedules, using streamlit for the frontend and a Python backend alongside an MCP server to allow agentic access to Firestore database.",
+              prodActivity,
+              "https://github.com/maheshtnt/ProdActivity",
+              githubIcon,
+              false
+            )}
             {/* {ProjectCard(
               "SoundFlow",
               "A web application that allows users to share and experience music tracks, ",
@@ -195,7 +204,7 @@ function App() {
             )} */}
           </div>
           
-          <div className="mt-[35vh] h-[10rem] w-full flex flex-col gap-8 items-center">
+          <div className="mt-[32vh] h-[10rem] w-full flex flex-col gap-8 items-center">
               <div className="text-5xl">Contact Me</div>
               <div className="flex flex-row gap-5">
                 <a href="https://github.com/maheshtnt">
